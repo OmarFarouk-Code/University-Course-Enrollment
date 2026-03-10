@@ -81,4 +81,14 @@ public class Course
         }
     }
 
+    public void displayAllStudents()
+    {
+        int i = 1;
+        for ( Student student : enrolledStudents )
+        {
+            System.out.println( i + ".Name : " + student.getName() );
+            i++;
+        }
+    }
+
 }
