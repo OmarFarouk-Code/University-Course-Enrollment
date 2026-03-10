@@ -5,6 +5,7 @@ public class Main
     public static void main ( String args[] )
     {
         EnrollmentSystem enrollmentSystem = new EnrollmentSystem();
+        enrollmentSystem.initializedDatabase();
         Scanner input = new Scanner(System.in);
         Instructor defaultInstructor = new Instructor("dr.smith@university.edu", "Dr. Smith", "INS001", "Computer Science");
 
@@ -109,6 +110,19 @@ public class Main
                     {
                         System.out.println("Error: Course not found.");
                     }
+                    break;
+                
+                case 7 :
+                    System.out.print("Enter Instructor Name: ");
+                    String iName = input.nextLine();
+                    System.out.print("Enter Instructor ID: ");
+                    String iID = input.nextLine();
+                    System.out.print("Enter Instructor Email: ");
+                    String iEmail = input.nextLine();
+                    System.out.print("Enter Specialization: ");
+                    String iSpec = input.nextLine();
+                    enrollmentSystem.registerInstructor(new Instructor(iEmail, iName, iID, iSpec));
+                    System.out.println("Instructor registered successfully.");
                     break;
 
                 case 0 :
