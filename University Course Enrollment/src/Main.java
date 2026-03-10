@@ -11,16 +11,20 @@ public class Main
 
         while (true)
         {
-            System.out.println("\n--- University Enrollment System ---");
-            System.out.println("1. Register Student");
-            System.out.println("2. Create Course");
-            System.out.println("3. Enroll Student in Course");
-            System.out.println("4. Drop Student from Course");
-            System.out.println("5. View Student Details");
-            System.out.println("6. Display Students Enrolled in Specific Course");
-            System.out.println("7. Register Instructor");
-            System.out.println("0. Exit");
-            System.out.print("Enter choice: ");
+            System.out.println("\n******************************************");
+            System.out.println("* UNIVERSITY ENROLLMENT SYSTEM      *");
+            System.out.println("******************************************");
+            System.out.println("  [1] Register New Student");
+            System.out.println("  [2] Create New Course");
+            System.out.println("  [3] Enroll Student in Course");
+            System.out.println("  [4] Drop Student from Course");
+            System.out.println("------------------------------------------");
+            System.out.println("  [5] View Student Details");
+            System.out.println("  [6] View Course Roster");
+            System.out.println("  [7] Register New Instructor");
+            System.out.println("  [0] Exit Application");
+            System.out.println("******************************************");
+            System.out.print("Selection > ");
 
             int choice = input.nextInt();
             input.nextLine();

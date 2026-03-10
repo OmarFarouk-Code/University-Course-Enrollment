@@ -27,10 +27,15 @@ public class Student extends Person
 
    public void displayDetails()
    {
-        System.out.println( "ID : " + getID() );
-        System.out.println( "Name : " + getName() );
-        System.out.println( "Email : " + getEmail() ); 
-        System.out.println( "Number of Courses Enrolled in : " + enrolledCourses.size() );  
+        System.out.println("\n+----------------------------------------+");
+        System.out.println("|            STUDENT PROFILE             |");
+        System.out.println("+----------------------------------------+");
+        System.out.printf("| %-12s : %-23s |\n", "Full Name", getName());
+        System.out.printf("| %-12s : %-23s |\n", "Student ID", getID());
+        System.out.printf("| %-12s : %-23s |\n", "Email", getEmail());
+        System.out.println("+----------------------------------------+");
+        System.out.printf("| %-12s : %-23d |\n", "Enrollments", enrolledCourses.size());
+        System.out.println("+----------------------------------------+");
    }
 
 }

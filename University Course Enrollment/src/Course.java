@@ -54,15 +54,15 @@ public class Course
 
     public void enrollStudent( Student student )
     {
-        if ( !isFull() )
+       if (!isFull()) 
         {
-            enrolledStudents.add( student );
-            student.addCourse( this );
-            System.out.println("Enrollment successful!");
-        }
-        else
+            enrolledStudents.add(student);
+            student.addCourse(this);
+            System.out.println("[SUCCESS] " + student.getName() + " has been added to " + this.title);
+        } 
+        else 
         {
-            System.out.println("Max Course Capacity has been reached!");
+            System.out.println("[ERROR] Cannot enroll: " + this.title + " is at maximum capacity (" + maxCapacity + ")");
         }
     }
 
