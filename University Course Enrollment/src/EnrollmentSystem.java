@@ -20,6 +20,10 @@ public class EnrollmentSystem
     {
         allCourses.add(course);
     }
+    public void removeCourse ( Course course )
+    {
+        allCourses.remove (course);
+    }
 
     public Student findStudentById(String ID )
     {

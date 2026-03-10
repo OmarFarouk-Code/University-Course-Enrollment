@@ -10,6 +10,16 @@ public class Student extends Person
         this.enrolledCourses = new ArrayList <>();
    }
 
+   public void addCourse( Course course )
+   {
+        enrolledCourses.add(course);
+   }
+
+   public void removeCourse ( Course course )
+    {
+        enrolledCourses.remove(course);
+    }
+
    public ArrayList getEnrolledCourses()
    {
         return enrolledCourses;

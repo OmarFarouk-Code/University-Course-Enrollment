@@ -57,6 +57,8 @@ public class Course
         if ( !isFull() )
         {
             enrolledStudents.add( student );
+            student.addCourse( this );
+            System.out.println("Enrollment successful!");
         }
         else
         {
@@ -68,9 +70,13 @@ public class Course
     {
         for ( int i = 0 ; i < enrolledStudents.size() ; i++ )
         {
-            if ( enrolledStudents.get(i).getID() == ID )
+            if ( enrolledStudents.get(i).getID().equals(ID) )
             {
+                Student studentToDrop = enrolledStudents.get(i);
+                studentToDrop.removeCourse(this);
                 enrolledStudents.remove(i);
+                System.out.println("Student dropped successfully.");
+                return;
             }
         }
     }
