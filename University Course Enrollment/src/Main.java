@@ -18,6 +18,7 @@ public class Main
             System.out.println("4. Drop Student from Course");
             System.out.println("5. View Student Details");
             System.out.println("6. Display Students Enrolled in Specific Course");
+            System.out.println("7. Register Instructor");
             System.out.println("0. Exit");
             System.out.print("Enter choice: ");
 
