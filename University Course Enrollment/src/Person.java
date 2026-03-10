@@ -41,5 +41,11 @@ public class Person
         this.ID = ID;
     }
 
-    
+    public void displayDetails()
+    {
+        System.out.println( "ID : " + ID );
+        System.out.println( "Name : " + name );
+        System.out.println( "Email : " + email);   
+    }
+
 }
