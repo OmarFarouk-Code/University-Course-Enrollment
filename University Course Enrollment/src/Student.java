@@ -20,7 +20,7 @@ public class Student extends Person
         enrolledCourses.remove(course);
     }
 
-   public ArrayList getEnrolledCourses()
+   public ArrayList<Course> getEnrolledCourses()
    {
         return enrolledCourses;
    }
