@@ -106,4 +106,5 @@ public class EnrollmentSystem
         System.out.println("Instructors, Courses, and Students initialized.");
         
     }
+
 }

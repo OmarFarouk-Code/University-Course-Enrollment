@@ -24,7 +24,7 @@ public class Main
 
             int choice = input.nextInt();
             input.nextLine();
-            while ( choice < 0 || choice > 6)
+            while ( choice < 0 || choice > 7)
             {
                 System.out.println("Invalid Choice, Please Enter a Valid Choice :");
                 choice = input.nextInt();
