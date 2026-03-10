@@ -29,7 +29,7 @@ public class EnrollmentSystem
     {
         for ( Student student : allStudents )
         {
-            if ( student.getID() == ID )
+            if ( student.getID().equals(ID) )
             {
                 return student;
             }
@@ -41,7 +41,7 @@ public class EnrollmentSystem
     {
         for ( Course course : allCourses )
         {
-            if ( course.getCourseCode() == code )
+            if ( course.getCourseCode().equals(code) )
             {
                 return course;
             }
