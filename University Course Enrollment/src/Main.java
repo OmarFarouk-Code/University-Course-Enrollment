@@ -16,12 +16,13 @@ public class Main
             System.out.println("3. Enroll Student in Course");
             System.out.println("4. Drop Student from Course");
             System.out.println("5. View Student Details");
+            System.out.println("6. Display Students Enrolled in Specific Course");
             System.out.println("0. Exit");
             System.out.print("Enter choice: ");
 
             int choice = input.nextInt();
             input.nextLine();
-            while ( choice < 0 || choice > 5)
+            while ( choice < 0 || choice > 6)
             {
                 System.out.println("Invalid Choice, Please Enter a Valid Choice :");
                 choice = input.nextInt();
@@ -93,6 +94,20 @@ public class Main
                         viewStudent.displayDetails();
                     } else {
                         System.out.println("Error: Student not found.");
+                    }
+                    break;
+
+                case 6 :
+                    System.out.print("Enter Course Code: ");
+                    String DisplayCCode = input.nextLine();
+                    Course displaycourse = enrollmentSystem.findCourseByCode(DisplayCCode);
+                    if ( displaycourse != null )
+                    {
+                        displaycourse.displayAllStudents();
+                    }
+                    else
+                    {
+                        System.out.println("Error: Course not found.");
                     }
                     break;
 
