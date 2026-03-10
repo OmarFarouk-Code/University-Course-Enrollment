@@ -11,9 +11,18 @@ public class EnrollmentSystem
         this.allCourses = new ArrayList<>();
     }
 
-    public void registerStudent ( Student student )
+    public void registerStudent(Student student) 
     {
-        allStudents.add(student);
+    
+        if (findStudentById(student.getID()) == null)
+        {
+            allStudents.add(student);
+            System.out.println("Student registered successfully.");
+        } 
+        else 
+        {
+            System.out.println("Error: A student with ID " + student.getID() + " already exists!");
+        }
     }
 
     public void addCourse ( Course course )
